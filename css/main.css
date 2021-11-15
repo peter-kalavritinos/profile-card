@@ -1,0 +1,27 @@
+body {
+    background-color: #5da0ab;
+}
+
+.main {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #none;
+    max-width: max-content;
+    border-radius: 10px;
+    margin: 12% auto 20% auto;
+}
+
+#card {
+    width: 900px;
+    height: 400px;
+    background-color: white;
+    margin: 30px auto auto auto;
+    border-radius: 25px;
+    padding: 3rem 2rem 2rem 0;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    position: relative;
+    background-image: url("./images/illustration-dashboard.png");
+    background-repeat: no-repeat;
+    background-position: -550px;
+}
