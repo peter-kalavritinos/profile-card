@@ -1,5 +1,6 @@
 body {
     background-color: #5da0ab;
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pettern-top.svg');
 }
 
 .main {
