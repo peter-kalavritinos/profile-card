@@ -1,28 +1,105 @@
 body {
     background-color: #5da0ab;
-    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pettern-top.svg');
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pettern-top.svg");
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.main {
+
+/*.main {
     display: flex;
     flex-wrap: nowrap;
     background-color: #none;
     max-width: max-content;
     border-radius: 10px;
     margin: 12% auto 20% auto;
-}
+}*/
 
 #card {
-    width: 900px;
-    height: 400px;
+    max-width: 350px;
     background-color: white;
-    margin: 30px auto auto auto;
-    border-radius: 25px;
-    padding: 3rem 2rem 2rem 0;
-    display: flex;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin: 0 auto;
+    border-radius: 10px;
     position: relative;
-    background-image: url("./images/illustration-dashboard.png");
-    background-repeat: no-repeat;
-    background-position: -550px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.profile-pic {
+    margin: 0 auto;
+    display: block;
+    transform: translateY(-54%);
+    margin-bottom: -3rem;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.personal-info {
+    line-height: 0.8;
+}
+
+.name {
+    color: hsl(229, 23%, 23%);
+    text-align: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.age {
+    color: hsl(227, 10%, 46%);
+    margin-left: 0.3rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 100px;
+}
+
+.location {
+    color: hsl(227, 10%, 46%);
+    text-align: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+}
+
+hr {
+    opacity: .2;
+    margin-top: 2rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 0;
+    padding: 0.8rem;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+li span:nth-of-type(1) {
+    font-size: 1.125rem;
+    font-weight: 700;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+li span:nth-of-type(2) {
+    font-size: 0.7rem;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.attribution {
+    font-family: 'Kumbh Sans', sans-serif;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 10px;
 }
